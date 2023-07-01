@@ -1,8 +1,16 @@
 <?php
-require_once 'config.php';
-require_once 'Database.php';
 
-$database = new Database($host, $username, $password, $dbname);
+require_once 'vendor/autoload.php';
+
+use App\Database\Database;
+use App\Config\DatabaseConfig;
+
+$database = new Database(
+    DatabaseConfig::HOST,
+    DatabaseConfig::USERNAME,
+    DatabaseConfig::PASSWORD,
+    DatabaseConfig::DBNAME
+);
 $pdo = $database->getConnection();
 
 $sql = "SELECT * FROM posts ORDER BY created_at DESC";

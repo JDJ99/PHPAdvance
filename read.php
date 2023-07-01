@@ -1,15 +1,25 @@
 <?php
-require_once 'config.php';
-require_once 'Database.php';
 
-$database = new Database($host, $username, $password, $dbname);
+namespace App;
+
+require_once 'vendor/autoload.php'; // Include the Composer autoloader
+
+use App\Config\DatabaseConfig;
+use App\Database\Database;
+
+$database = new Database(
+    DatabaseConfig::HOST,
+    DatabaseConfig::USERNAME,
+    DatabaseConfig::PASSWORD,
+    DatabaseConfig::DBNAME
+);
 $pdo = $database->getConnection();
 
 $sql = "SELECT * FROM posts ORDER BY created_at DESC";
 $stmt = $pdo->query($sql);
 
 if ($stmt->rowCount() > 0) {
-    while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
+    while ($row = $stmt->fetch(\PDO::FETCH_ASSOC)) {
         echo '<div class="post">
                 <h3>'.$row['title'].'</h3>
                 <p>'.$row['content'].'</p>

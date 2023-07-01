@@ -1,11 +1,21 @@
 <?php
-require_once 'config.php';
-require_once 'Database.php';
+
+namespace App;
+
+require_once 'vendor/autoload.php'; // Include the Composer autoloader
+
+use App\Config\DatabaseConfig;
+use App\Database\Database;
 
 if (isset($_GET['id'])) {
     $id = $_GET['id'];
 
-    $database = new Database($host, $username, $password, $dbname);
+    $database = new Database(
+        DatabaseConfig::HOST,
+        DatabaseConfig::USERNAME,
+        DatabaseConfig::PASSWORD,
+        DatabaseConfig::DBNAME
+    );
     $pdo = $database->getConnection();
 
     $sql = "DELETE FROM posts WHERE id = ?";
