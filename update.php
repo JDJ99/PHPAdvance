@@ -1,5 +1,4 @@
 <?php
-
 require_once 'vendor/autoload.php';
 
 use App\Database\Database;
@@ -49,17 +48,23 @@ if (isset($_POST['submit'])) {
 <html>
 <head>
     <title>Update Post</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 </head>
 <body>
-<form method="POST" action="update.php">
-    <input type="hidden" name="id" value="<?php echo $post['id']; ?>">
-    <label for="title">Title:</label>
-    <input type="text" name="title" id="title" value="<?php echo $post['title']; ?>">
-    <br>
-    <label for="content">Content:</label>
-    <textarea name="content" id="content"><?php echo $post['content']; ?></textarea>
-    <br>
-    <input type="submit" name="submit" value="Update">
-</form>
+<div class="container">
+    <h1>Update Post</h1>
+    <form method="POST" action="update.php">
+        <input type="hidden" name="id" value="<?php echo $post['id']; ?>">
+        <div class="form-group">
+            <label for="title">Title:</label>
+            <input type="text" name="title" id="title" value="<?php echo $post['title']; ?>" class="form-control">
+        </div>
+        <div class="form-group">
+            <label for="content">Content:</label>
+            <textarea name="content" id="content" class="form-control"><?php echo $post['content']; ?></textarea>
+        </div>
+        <input type="submit" name="submit" value="Update" class="btn btn-primary">
+    </form>
+</div>
 </body>
 </html>

@@ -1,10 +1,13 @@
 {
   "autoload": {
     "psr-4": {
-      "App\\": "src/App"
+      "App\\": "src/App/",
+      "TemplateEngine\\": "src/TemplateEngine/"
     }
   },
   "require": {
     "illuminate/view": "^10.14"
   }
 }
+
+
