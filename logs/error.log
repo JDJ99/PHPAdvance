@@ -1,0 +1,114 @@
+[02-Jul-2023 17:03:26 Europe/Berlin] PHP Fatal error:  Uncaught Exception: DB connection failed: SQLSTATE[HY000] [1049] Unknown database 'avancephp' in C:\xampp\htdocs\PHPAdvance\src\App\Database\Database.php:28
+Stack trace:
+#0 C:\xampp\htdocs\PHPAdvance\src\App\Database\Database.php(15): App\Database\Database->connect()
+#1 C:\xampp\htdocs\PHPAdvance\index.php(13): App\Database\Database->__construct('localhost', 'root', '', 'avancephp')
+#2 {main}
+  thrown in C:\xampp\htdocs\PHPAdvance\src\App\Database\Database.php on line 28
+[02-Jul-2023 17:03:28 Europe/Berlin] PHP Fatal error:  Uncaught Exception: DB connection failed: SQLSTATE[HY000] [1049] Unknown database 'avancephp' in C:\xampp\htdocs\PHPAdvance\src\App\Database\Database.php:28
+Stack trace:
+#0 C:\xampp\htdocs\PHPAdvance\src\App\Database\Database.php(15): App\Database\Database->connect()
+#1 C:\xampp\htdocs\PHPAdvance\index.php(13): App\Database\Database->__construct('localhost', 'root', '', 'avancephp')
+#2 {main}
+  thrown in C:\xampp\htdocs\PHPAdvance\src\App\Database\Database.php on line 28
+[02-Jul-2023 17:03:29 Europe/Berlin] PHP Fatal error:  Uncaught Exception: DB connection failed: SQLSTATE[HY000] [1049] Unknown database 'avancephp' in C:\xampp\htdocs\PHPAdvance\src\App\Database\Database.php:28
+Stack trace:
+#0 C:\xampp\htdocs\PHPAdvance\src\App\Database\Database.php(15): App\Database\Database->connect()
+#1 C:\xampp\htdocs\PHPAdvance\index.php(13): App\Database\Database->__construct('localhost', 'root', '', 'avancephp')
+#2 {main}
+  thrown in C:\xampp\htdocs\PHPAdvance\src\App\Database\Database.php on line 28
+[02-Jul-2023 17:03:31 Europe/Berlin] PHP Fatal error:  Uncaught Exception: DB connection failed: SQLSTATE[HY000] [1049] Unknown database 'avancephp' in C:\xampp\htdocs\PHPAdvance\src\App\Database\Database.php:28
+Stack trace:
+#0 C:\xampp\htdocs\PHPAdvance\src\App\Database\Database.php(15): App\Database\Database->connect()
+#1 C:\xampp\htdocs\PHPAdvance\index.php(13): App\Database\Database->__construct('localhost', 'root', '', 'avancephp')
+#2 {main}
+  thrown in C:\xampp\htdocs\PHPAdvance\src\App\Database\Database.php on line 28
+[02-Jul-2023 17:03:33 Europe/Berlin] PHP Fatal error:  Uncaught Exception: DB connection failed: SQLSTATE[HY000] [1049] Unknown database 'avancephp' in C:\xampp\htdocs\PHPAdvance\src\App\Database\Database.php:28
+Stack trace:
+#0 C:\xampp\htdocs\PHPAdvance\src\App\Database\Database.php(15): App\Database\Database->connect()
+#1 C:\xampp\htdocs\PHPAdvance\index.php(13): App\Database\Database->__construct('localhost', 'root', '', 'avancephp')
+#2 {main}
+  thrown in C:\xampp\htdocs\PHPAdvance\src\App\Database\Database.php on line 28
+[02-Jul-2023 17:03:36 Europe/Berlin] PHP Fatal error:  Uncaught Exception: DB connection failed: SQLSTATE[HY000] [1049] Unknown database 'avancephp' in C:\xampp\htdocs\PHPAdvance\src\App\Database\Database.php:28
+Stack trace:
+#0 C:\xampp\htdocs\PHPAdvance\src\App\Database\Database.php(15): App\Database\Database->connect()
+#1 C:\xampp\htdocs\PHPAdvance\index.php(13): App\Database\Database->__construct('localhost', 'root', '', 'avancephp')
+#2 {main}
+  thrown in C:\xampp\htdocs\PHPAdvance\src\App\Database\Database.php on line 28
+[02-Jul-2023 17:03:37 Europe/Berlin] PHP Fatal error:  Uncaught Exception: DB connection failed: SQLSTATE[HY000] [1049] Unknown database 'avancephp' in C:\xampp\htdocs\PHPAdvance\src\App\Database\Database.php:28
+Stack trace:
+#0 C:\xampp\htdocs\PHPAdvance\src\App\Database\Database.php(15): App\Database\Database->connect()
+#1 C:\xampp\htdocs\PHPAdvance\index.php(13): App\Database\Database->__construct('localhost', 'root', '', 'avancephp')
+#2 {main}
+  thrown in C:\xampp\htdocs\PHPAdvance\src\App\Database\Database.php on line 28
+[02-Jul-2023 17:03:37 Europe/Berlin] PHP Fatal error:  Uncaught Exception: DB connection failed: SQLSTATE[HY000] [1049] Unknown database 'avancephp' in C:\xampp\htdocs\PHPAdvance\src\App\Database\Database.php:28
+Stack trace:
+#0 C:\xampp\htdocs\PHPAdvance\src\App\Database\Database.php(15): App\Database\Database->connect()
+#1 C:\xampp\htdocs\PHPAdvance\index.php(13): App\Database\Database->__construct('localhost', 'root', '', 'avancephp')
+#2 {main}
+  thrown in C:\xampp\htdocs\PHPAdvance\src\App\Database\Database.php on line 28
+[02-Jul-2023 17:03:38 Europe/Berlin] PHP Fatal error:  Uncaught Exception: DB connection failed: SQLSTATE[HY000] [1049] Unknown database 'avancephp' in C:\xampp\htdocs\PHPAdvance\src\App\Database\Database.php:28
+Stack trace:
+#0 C:\xampp\htdocs\PHPAdvance\src\App\Database\Database.php(15): App\Database\Database->connect()
+#1 C:\xampp\htdocs\PHPAdvance\index.php(13): App\Database\Database->__construct('localhost', 'root', '', 'avancephp')
+#2 {main}
+  thrown in C:\xampp\htdocs\PHPAdvance\src\App\Database\Database.php on line 28
+[02-Jul-2023 17:03:38 Europe/Berlin] PHP Fatal error:  Uncaught Exception: DB connection failed: SQLSTATE[HY000] [1049] Unknown database 'avancephp' in C:\xampp\htdocs\PHPAdvance\src\App\Database\Database.php:28
+Stack trace:
+#0 C:\xampp\htdocs\PHPAdvance\src\App\Database\Database.php(15): App\Database\Database->connect()
+#1 C:\xampp\htdocs\PHPAdvance\index.php(13): App\Database\Database->__construct('localhost', 'root', '', 'avancephp')
+#2 {main}
+  thrown in C:\xampp\htdocs\PHPAdvance\src\App\Database\Database.php on line 28
+[02-Jul-2023 17:03:38 Europe/Berlin] PHP Fatal error:  Uncaught Exception: DB connection failed: SQLSTATE[HY000] [1049] Unknown database 'avancephp' in C:\xampp\htdocs\PHPAdvance\src\App\Database\Database.php:28
+Stack trace:
+#0 C:\xampp\htdocs\PHPAdvance\src\App\Database\Database.php(15): App\Database\Database->connect()
+#1 C:\xampp\htdocs\PHPAdvance\index.php(13): App\Database\Database->__construct('localhost', 'root', '', 'avancephp')
+#2 {main}
+  thrown in C:\xampp\htdocs\PHPAdvance\src\App\Database\Database.php on line 28
+[02-Jul-2023 17:03:38 Europe/Berlin] PHP Fatal error:  Uncaught Exception: DB connection failed: SQLSTATE[HY000] [1049] Unknown database 'avancephp' in C:\xampp\htdocs\PHPAdvance\src\App\Database\Database.php:28
+Stack trace:
+#0 C:\xampp\htdocs\PHPAdvance\src\App\Database\Database.php(15): App\Database\Database->connect()
+#1 C:\xampp\htdocs\PHPAdvance\index.php(13): App\Database\Database->__construct('localhost', 'root', '', 'avancephp')
+#2 {main}
+  thrown in C:\xampp\htdocs\PHPAdvance\src\App\Database\Database.php on line 28
+[02-Jul-2023 17:03:38 Europe/Berlin] PHP Fatal error:  Uncaught Exception: DB connection failed: SQLSTATE[HY000] [1049] Unknown database 'avancephp' in C:\xampp\htdocs\PHPAdvance\src\App\Database\Database.php:28
+Stack trace:
+#0 C:\xampp\htdocs\PHPAdvance\src\App\Database\Database.php(15): App\Database\Database->connect()
+#1 C:\xampp\htdocs\PHPAdvance\index.php(13): App\Database\Database->__construct('localhost', 'root', '', 'avancephp')
+#2 {main}
+  thrown in C:\xampp\htdocs\PHPAdvance\src\App\Database\Database.php on line 28
+[02-Jul-2023 17:03:50 Europe/Berlin] PHP Fatal error:  Uncaught Exception: DB connection failed: SQLSTATE[HY000] [1049] Unknown database 'avancephp' in C:\xampp\htdocs\PHPAdvance\src\App\Database\Database.php:28
+Stack trace:
+#0 C:\xampp\htdocs\PHPAdvance\src\App\Database\Database.php(15): App\Database\Database->connect()
+#1 C:\xampp\htdocs\PHPAdvance\index.php(13): App\Database\Database->__construct('localhost', 'root', '', 'avancephp')
+#2 {main}
+  thrown in C:\xampp\htdocs\PHPAdvance\src\App\Database\Database.php on line 28
+[02-Jul-2023 17:03:50 Europe/Berlin] PHP Fatal error:  Uncaught Exception: DB connection failed: SQLSTATE[HY000] [1049] Unknown database 'avancephp' in C:\xampp\htdocs\PHPAdvance\src\App\Database\Database.php:28
+Stack trace:
+#0 C:\xampp\htdocs\PHPAdvance\src\App\Database\Database.php(15): App\Database\Database->connect()
+#1 C:\xampp\htdocs\PHPAdvance\index.php(13): App\Database\Database->__construct('localhost', 'root', '', 'avancephp')
+#2 {main}
+  thrown in C:\xampp\htdocs\PHPAdvance\src\App\Database\Database.php on line 28
+[02-Jul-2023 17:03:51 Europe/Berlin] PHP Fatal error:  Uncaught Exception: DB connection failed: SQLSTATE[HY000] [1049] Unknown database 'avancephp' in C:\xampp\htdocs\PHPAdvance\src\App\Database\Database.php:28
+Stack trace:
+#0 C:\xampp\htdocs\PHPAdvance\src\App\Database\Database.php(15): App\Database\Database->connect()
+#1 C:\xampp\htdocs\PHPAdvance\index.php(13): App\Database\Database->__construct('localhost', 'root', '', 'avancephp')
+#2 {main}
+  thrown in C:\xampp\htdocs\PHPAdvance\src\App\Database\Database.php on line 28
+[02-Jul-2023 17:04:04 Europe/Berlin] PHP Fatal error:  Uncaught Exception: DB connection failed: SQLSTATE[HY000] [1049] Unknown database 'avancephp' in C:\xampp\htdocs\PHPAdvance\src\App\Database\Database.php:28
+Stack trace:
+#0 C:\xampp\htdocs\PHPAdvance\src\App\Database\Database.php(15): App\Database\Database->connect()
+#1 C:\xampp\htdocs\PHPAdvance\index.php(13): App\Database\Database->__construct('localhost', 'root', '', 'avancephp')
+#2 {main}
+  thrown in C:\xampp\htdocs\PHPAdvance\src\App\Database\Database.php on line 28
+[02-Jul-2023 17:04:12 Europe/Berlin] PHP Fatal error:  Uncaught Exception: DB connection failed: SQLSTATE[HY000] [1049] Unknown database 'avancephp' in C:\xampp\htdocs\PHPAdvance\src\App\Database\Database.php:28
+Stack trace:
+#0 C:\xampp\htdocs\PHPAdvance\src\App\Database\Database.php(15): App\Database\Database->connect()
+#1 C:\xampp\htdocs\PHPAdvance\index.php(13): App\Database\Database->__construct('localhost', 'root', '', 'avancephp')
+#2 {main}
+  thrown in C:\xampp\htdocs\PHPAdvance\src\App\Database\Database.php on line 28
+[02-Jul-2023 17:04:17 Europe/Berlin] PHP Fatal error:  Uncaught Exception: DB connection failed: SQLSTATE[HY000] [1049] Unknown database 'avancephp' in C:\xampp\htdocs\PHPAdvance\src\App\Database\Database.php:28
+Stack trace:
+#0 C:\xampp\htdocs\PHPAdvance\src\App\Database\Database.php(15): App\Database\Database->connect()
+#1 C:\xampp\htdocs\PHPAdvance\index.php(13): App\Database\Database->__construct('localhost', 'root', '', 'avancephp')
+#2 {main}
+  thrown in C:\xampp\htdocs\PHPAdvance\src\App\Database\Database.php on line 28
