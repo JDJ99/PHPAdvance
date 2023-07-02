@@ -1,12 +1,10 @@
 <?php
 
-namespace App;
+require_once 'vendor/autoload.php';
 
-require_once 'vendor/autoload.php'; // Include the Composer autoloader
-
-use App\Config\DatabaseConfig;
 use App\Database\Database;
-
+use App\Config\DatabaseConfig;
+use App\Repositories\Repository;
 
 if (isset($_POST['submit'])) {
     $database = new Database(
@@ -15,14 +13,17 @@ if (isset($_POST['submit'])) {
         DatabaseConfig::PASSWORD,
         DatabaseConfig::DBNAME
     );
-    $pdo = $database->getConnection();
+    $repository = new Repository($database);
 
     $title = $_POST['title'];
     $content = $_POST['content'];
 
-    $sql = "INSERT INTO posts (title, content) VALUES (?, ?)";
-    $stmt = $pdo->prepare($sql);
-    $stmt->execute([$title, $content]);
+    $data = [
+        'title' => $title,
+        'content' => $content
+    ];
+
+    $repository->create($data);
 
     header('Location: index.php');
     exit();

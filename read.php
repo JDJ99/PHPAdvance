@@ -1,11 +1,10 @@
 <?php
 
-namespace App;
+require_once 'vendor/autoload.php';
 
-require_once 'vendor/autoload.php'; // Include the Composer autoloader
-
-use App\Config\DatabaseConfig;
 use App\Database\Database;
+use App\Config\DatabaseConfig;
+use App\Repositories\Repository;
 
 $database = new Database(
     DatabaseConfig::HOST,
@@ -13,17 +12,16 @@ $database = new Database(
     DatabaseConfig::PASSWORD,
     DatabaseConfig::DBNAME
 );
-$pdo = $database->getConnection();
+$repository = new Repository($database);
 
-$sql = "SELECT * FROM posts ORDER BY created_at DESC";
-$stmt = $pdo->query($sql);
+$posts = $repository->findAll();
 
-if ($stmt->rowCount() > 0) {
-    while ($row = $stmt->fetch(\PDO::FETCH_ASSOC)) {
+if (!empty($posts)) {
+    foreach ($posts as $post) {
         echo '<div class="post">
-                <h3>'.$row['title'].'</h3>
-                <p>'.$row['content'].'</p>
-                <p class="timestamp">Posted on '.$row['created_at'].'</p>
+                <h3>' . $post['title'] . '</h3>
+                <p>' . $post['content'] . '</p>
+                <p class="timestamp">Posted on ' . $post['created_at'] . '</p>
               </div>';
     }
 } else {

@@ -2,8 +2,9 @@
 
 require_once 'vendor/autoload.php';
 
-use App\Database\Database;
 use App\Config\DatabaseConfig;
+use App\Database\Database;
+use App\Repositories\Repository;
 
 $database = new Database(
     DatabaseConfig::HOST,
@@ -11,20 +12,19 @@ $database = new Database(
     DatabaseConfig::PASSWORD,
     DatabaseConfig::DBNAME
 );
-$pdo = $database->getConnection();
+$repository = new Repository($database);
+$posts = $repository->findAll();
 
-$sql = "SELECT * FROM posts ORDER BY created_at DESC";
-$stmt = $pdo->query($sql);
 
-if ($stmt->rowCount() > 0) {
-    while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
+if (!empty($posts)) {
+    foreach ($posts as $post) {
         echo '<div class="post">
-                <h3>'.$row['title'].'</h3>
-                <p>'.$row['content'].'</p>
-                <p class="timestamp">Posted on '.$row['created_at'].'</p>
+                <h3>'.$post['title'].'</h3>
+                <p>'.$post['content'].'</p>
+                <p class="timestamp">Posted on '.$post['created_at'].'</p>
                 <p>
-                    <a href="update.php?id='.$row['id'].'">Edit</a> |
-                    <a href="delete.php?id='.$row['id'].'" onclick="return confirm(\'Are you sure you want to delete this post?\')">Delete</a>
+                    <a href="update.php?id='.$post['id'].'">Edit</a> |
+                    <a href="delete.php?id='.$post['id'].'" onclick="return confirm(\'Are you sure you want to delete this post?\')">Delete</a>
                 </p>
               </div>';
     }

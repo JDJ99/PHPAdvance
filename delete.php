@@ -1,11 +1,10 @@
 <?php
 
-namespace App;
+require_once 'vendor/autoload.php';
 
-require_once 'vendor/autoload.php'; // Include the Composer autoloader
-
-use App\Config\DatabaseConfig;
 use App\Database\Database;
+use App\Config\DatabaseConfig;
+use App\Repositories\Repository;
 
 if (isset($_GET['id'])) {
     $id = $_GET['id'];
@@ -16,11 +15,9 @@ if (isset($_GET['id'])) {
         DatabaseConfig::PASSWORD,
         DatabaseConfig::DBNAME
     );
-    $pdo = $database->getConnection();
+    $repository = new Repository($database);
 
-    $sql = "DELETE FROM posts WHERE id = ?";
-    $stmt = $pdo->prepare($sql);
-    $stmt->execute([$id]);
+    $repository->delete($id);
 
     header('Location: index.php');
     exit();

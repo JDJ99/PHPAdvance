@@ -1,11 +1,10 @@
 <?php
 
-namespace App;
+require_once 'vendor/autoload.php';
 
-require_once 'vendor/autoload.php'; // Include the Composer autoloader
-
-use App\Config\DatabaseConfig;
 use App\Database\Database;
+use App\Config\DatabaseConfig;
+use App\Repositories\Repository;
 
 if (isset($_GET['id'])) {
     $id = $_GET['id'];
@@ -16,13 +15,9 @@ if (isset($_GET['id'])) {
         DatabaseConfig::PASSWORD,
         DatabaseConfig::DBNAME
     );
-    $pdo = $database->getConnection();
+    $repository = new Repository($database);
 
-    $sql = "SELECT * FROM posts WHERE id = ?";
-    $stmt = $pdo->prepare($sql);
-    $stmt->execute([$id]);
-
-    $post = $stmt->fetch(\PDO::FETCH_ASSOC);
+    $post = $repository->findById($id);
 }
 
 if (isset($_POST['submit'])) {
@@ -30,17 +25,20 @@ if (isset($_POST['submit'])) {
     $title = $_POST['title'];
     $content = $_POST['content'];
 
+    $data = [
+        'title' => $title,
+        'content' => $content
+    ];
+
     $database = new Database(
         DatabaseConfig::HOST,
         DatabaseConfig::USERNAME,
         DatabaseConfig::PASSWORD,
         DatabaseConfig::DBNAME
     );
-    $pdo = $database->getConnection();
+    $repository = new Repository($database);
 
-    $sql = "UPDATE posts SET title = ?, content = ? WHERE id = ?";
-    $stmt = $pdo->prepare($sql);
-    $stmt->execute([$title, $content, $id]);
+    $repository->update($id, $data);
 
     header('Location: index.php');
     exit();
